@@ -1,0 +1,10 @@
+{{# with user }}
+    <h1>{{upperCase nome}}</h1>
+    <h2>{{email}}</h2>
+{{/ with}}
+
+{{# if auth}}
+    <p>Você está logado. Seja bem vindo</p>
+{{else}}
+    {{>login-form}}
+{{/ if}}
